@@ -22,17 +22,17 @@ def test():
         return "Invalid payload", 400
     else:
         if symptoms == []: return "'Normal'"
-       # svm_pred = svm_model(symptoms)
-        dt_pred = dt_model(symptoms)
-       # nb_pred = nb_model(symptoms)
-        mnb_pred = mnb_model(symptoms)
-        rf_pred = rf_model(symptoms)
+        svm_pred = svm_model(symptoms)
+        # dt_pred = dt_model(symptoms)
+        nb_pred = nb_model(symptoms)
+        # mnb_pred = mnb_model(symptoms)
+        # rf_pred = rf_model(symptoms)
         seen, results = set(), ""
-       # seen.add(str(svm_pred))
-        seen.add(str(dt_pred))
-       # seen.add(str(nb_pred))
-        seen.add(str(mnb_pred))
-        seen.add(str(rf_pred))
+        seen.add(str(svm_pred))
+        # seen.add(str(dt_pred))
+        seen.add(str(nb_pred))
+        # seen.add(str(mnb_pred))
+        # seen.add(str(rf_pred))
         for i in seen:
             results += i + " "
         # gb_pred = gb_model(symptoms)
