@@ -9,10 +9,10 @@ with open('svm_model.pkl', 'rb') as f:
     svm = pickle.load(f)
 with open('nb_model.pkl', 'rb') as f:
     nb = pickle.load(f)
-dt = joblib.load('decision_tree.joblib')
-mnb = joblib.load('mnb.joblib')
-rf = joblib.load('random_forest.joblib')
-gb = joblib.load('gradient_boost.joblib')
+# dt = joblib.load('decision_tree.joblib')
+# mnb = joblib.load('mnb.joblib')
+# rf = joblib.load('random_forest.joblib')
+# gb = joblib.load('gradient_boost.joblib')
 def svm_model(l):
     symptom = np.zeros(132, dtype=int).reshape(1,-1)
     for i in l: symptom[0][symptoms.index(i)] = 1
@@ -24,25 +24,25 @@ def nb_model(l):
     for i in l: symptom[0][symptoms.index(i)] = 1
     pred = nb.predict(symptom)
     return pred
-def dt_model(l):
-    symptom = np.zeros(132, dtype=int).reshape(1,-1)
-    for i in l: symptom[0][symptoms.index(i)] = 1
-    pred = dt.predict(symptom)
-    return pred
-def mnb_model(l):
-    symptom = np.zeros(132, dtype=int).reshape(1,-1)
-    for i in l: symptom[0][symptoms.index(i)] = 1
-    pred = mnb.predict(symptom)
-    return pred
-def rf_model(l):
-    symptom = np.zeros(132, dtype=int).reshape(1,-1)
-    for i in l: symptom[0][symptoms.index(i)] = 1
-    pred = rf.predict(symptom)
-    return pred
-def gb_model(l):
-    symptom = np.zeros(132, dtype=int).reshape(1,-1)
-    for i in l: symptom[0][symptoms.index(i)] = 1
-    pred = gb.predict(symptom)
-    return pred
+# def dt_model(l):
+#     symptom = np.zeros(132, dtype=int).reshape(1,-1)
+#     for i in l: symptom[0][symptoms.index(i)] = 1
+#     pred = dt.predict(symptom)
+#     return pred
+# def mnb_model(l):
+#     symptom = np.zeros(132, dtype=int).reshape(1,-1)
+#     for i in l: symptom[0][symptoms.index(i)] = 1
+#     pred = mnb.predict(symptom)
+#     return pred
+# def rf_model(l):
+#     symptom = np.zeros(132, dtype=int).reshape(1,-1)
+#     for i in l: symptom[0][symptoms.index(i)] = 1
+#     pred = rf.predict(symptom)
+#     return pred
+# def gb_model(l):
+#     symptom = np.zeros(132, dtype=int).reshape(1,-1)
+#     for i in l: symptom[0][symptoms.index(i)] = 1
+#     pred = gb.predict(symptom)
+#     return pred
 
 print(len(symptoms))
