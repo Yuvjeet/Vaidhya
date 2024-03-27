@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+.logo{
+    background-blend-mode: color-burn;
+}
+body{
+    background: #F5F5F5;
+    font-family: 'Inria Sans', sans-serif;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+.black{
+    background-color: #3A3838;
+}
+.blue{
+    background-color: #038B93;
+}
+
+table{
+    /* border: 2px solid; */
+    font-size: 2rem;
+    padding: 1rem;
+    /* width: 100%; */
+    display: flex;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: white;
+    /* text-shadow: black 0 0 2px; */
+    /* background-color: #3A3838; */
+}
+
+/* .Greatings{
+    color: #3A3838;
+    border: 0px !important; 
+    border-radius: 0% !important;
+    background-color: #F5F5F5 !important;
+    color: #3A3838 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    margin: 0 !important;
+    padding-bottom: 0 !important;
+} */
+
+tr{
+    /* border: 1px solid; */
+    padding: 1rem;
+}
+/* td{
+    border: 2px solid;
+    border-radius: 25px;
+    padding: 1rem;
+    border-radius: 25px;
+    background-color: white;
+    background-color: #038B93;
+    background-color: #038B93;
+} */
+input{
+    margin-left: 25rem;
+}
+.header{
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    height: 13rem;
+    border-bottom: 1px solid black;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    margin-left: 17rem;
+    height: 10rem;
+}
+.nav-option{
+    display: flex;
+    margin-right: 2rem;
+    align-self: flex-end;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+.header h6{
+    font-size: 2rem;
+    margin-right: 2rem;
+    font-weight: 400;
+}
+
+
+.side{
+    position: fixed;
+    right: 0;
+    /* z-index: -1; */
+    width: 18.8rem;
+    height: 76.5rem;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inria Sans', sans-serif;
+    box-shadow: black 2px 0 1rem;
+    text-shadow: black 0 0 5px;
+}
+.side h1{
+    font-size: 5.5rem;
+    transform: rotate(-90.44 deg);
+    color: #ffffff;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    word-spacing: 1rem;
+    letter-spacing: 0.2rem;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.main-left h1:first-child{
+    margin-top: 20rem;
+}
+
+.main-left h1{
+    margin-left: 25rem;
+    
+    font-family: 'Corben';
+    font-size: 4.2rem;
+    font-weight: 400;
+}
+
+.symptom, .result{
+    margin-left: 25rem;
+    display: flex;
+    width: 45rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+.symptom div, .symptom tr{
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.479) 2px 0 1rem;
+    height: fit-content;
+    padding: 1rem;
+    font-size: 2rem;
+    margin-right: 1rem;
+    /* border: 2px solid black; */
+    border-radius: 25px;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: white;
+    background-color: #038B93;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: white;
+    text-shadow: black 0 0 2px;
+}
+.main-left h6{
+    margin-left: 25rem !important;
+    padding-top: 1rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-weight: 400;
+    display: none;
+    height: fit-content;
+}
+/* .symptom p{
+    height: 4.5rem;
+    padding: 1rem;
+    font-size: 2rem;
+    margin-right: 1rem;
+    border: 2px solid black;
+    border-radius: 25px;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: white;
+} */
+
+.main-left input[type = "text"]{
+    margin-top: 5rem;
+    margin-left: 25rem;
+    width: 40rem;
+    height: 4rem;
+    border-radius: 25px;
+    border: 1px solid ;
+    padding-left: 2rem;
+    font-size: 2rem;
+    position: relative;
+}
+
+.btn{
+    width: fit-content;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    background-color: #038B93;
+    text-align: center;
+    font-family: 'Inria Sans';
+    border-radius: 12px;
+    color: white;
+    font-weight: bold
+}
+
+.active {
+    background-color: #717171;
+}
+.main-right{
+    margin-top: 13rem;
+    box-sizing: border-box;
+    border-left: 1px solid black;
+    height: 63rem;
+    width: 69rem;
+    background-color: #ffffff;
+    border-right: 2px solid black;
+
+    /* margin-right: 5rem; */
+}
+.main-right img{
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+}
+
+.slideshow-container{
+    transition: 10s;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 5s;
+}
+  
+@keyframes fade {
+    0% {opacity: 0}
+    /* 5%{opacity: 0.1} */
+    50% {opacity: 1}
+    /* 95%{opacity: 0.1} */
+    100% {opacity: 0}
+}
+  
+/* ::-webkit-input-placeholder { 
+   padding-left: 2rem;
+   font-size: 2rem;
+} */
+
+
+.footer{
+    position:fixed;
+    width: 100%;
+    height: 7.3em;
+    left: 0px;
+    bottom: 0;
+    color: #ffffff;
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 500;
+    /* z-index: -1; */
+}
+
+/* Auto Complete */
+.autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: inline-block;
+}
+
+.autocomplete-items {
+    font-size: 1.6rem;
+    width: 30rem;
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    margin-left: 25rem;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+}
+.autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
+

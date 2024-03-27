@@ -1,0 +1,39 @@
+{%extends "layout.html"%}
+{%block main%}
+<div class="main">
+    <div class="main-left">
+        <h1>Tell Your Symptoms VAIDHYA </h1>
+        <h1>Will Detect it.</h1>
+        <div class="autocomplete">
+            <input type="text" id = "input" placeholder="Type here.." >
+            <button class="btn" id="btn" onclick="Search()">Search</button>
+        </div>
+        <h6 id="tags">Symptoms:</h6>
+        <h6 id = "Diseases">Diseases You May have:</h6>
+        <div class = symptom id="symptoms">
+        </div>
+        <div class="result" id = "result"></div>
+    </div>
+    <div class="main-right">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+            <img src="{{url_for('static', filename = 'image 1.jpg')}}">
+            </div>
+        
+            <div class="mySlides fade">>
+            <img src="{{url_for('static', filename = 'image 2.jpg')}}">
+            </div>
+        
+            <!-- <div class="mySlides fade">
+            <img src="img3.jpg" style="width:100%">
+            </div> -->
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+</div>
+{% endblock main %}
