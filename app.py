@@ -43,5 +43,5 @@ def test():
         print("prediction: ", rf_pred)
         print(data, "\n\n")
         return str(results)
-if __name__ == '__main__':
-    app.run(debug = True)
+# if __name__ == '__main__':
+#     app.run(debug = True)
